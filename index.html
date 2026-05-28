@@ -1,61 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>FameSMP Official</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <header>
-        <h1>Welcome to FameSMP</h1>
-        <p>Your Minecraft adventure starts here!</p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#blog">Blog</a>
-            <a href="#youtube">YouTube Posts</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<nav class="navbar">
+  <div class="logo">FameSMP</div>
 
-    <section id="home" class="gradient-section">
-        <h2>Join the Minecraft World at <span class="ip">famesmpssn3.mcsh.io</span></h2>
-        <p>Invite us to your server and explore!</p>
-        <a class="button" href="https://discord.gg/EB55tE3syg" target="_blank">Join our Discord</a>
-    </section>
+  <div class="nav-links">
+    <a href="#" onclick="showPage('home-page')">Home</a>
+    <a href="#" onclick="showPage('blog-page')">Blog</a>
+    <a href="#" onclick="showPage('youtube-page')">YT Posts</a>
+    <a href="#" onclick="showPage('seasons-page')">Seasons</a>
+    <a href="#" onclick="showPage('discord-page')">Discord</a>
+  </div>
+</nav>
 
-    <section id="blog" class="content-section">
-        <h2>Latest Blog Posts</h2>
-        <div class="posts">
-            <div class="post">
-                <h3>Welcome to the FameSMP Blog!</h3>
-                <p>Stay tuned for updates, guides, and more Minecraft news.</p>
-            </div>
-            <!-- Add more blog posts here -->
+<div class="floating-cube cube1"></div>
+<div class="floating-cube cube2"></div>
+
+<div id="home-page" class="page active-page">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>FameSMP Official</h1>
+
+      <p>
+        Enter the next-level Minecraft SMP experience with economy,
+        survival, PvP, community events, and nonstop adventures.
+      </p>
+
+      <div class="server-box">
+        <div class="server-ip" id="serverIP">
+          famesmpssn3.mcsh.io
         </div>
-    </section>
 
-    <section id="youtube" class="content-section">
-        <h2>Our YouTube Channel</h2>
-        <div class="posts">
-            <div class="post">
-                <h3>Latest YouTube Video</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yourvideoid" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!-- You can embed more videos -->
+        <button class="copy-btn" onclick="copyIP()">
+          Copy IP
+        </button>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="https://discord.gg/EB55tE3syg"
+           target="_blank"
+           class="btn primary">
+          Join Discord
+        </a>
+
+        <a href="#"
+           onclick="showPage('blog-page')"
+           class="btn secondary">
+          Explore Updates
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="blog-page" class="page">
+  <section>
+    <h2 class="section-title">FameSMP Blog</h2>
+
+    <p class="section-sub">
+      Server news, updates, events, and community announcements.
+    </p>
+
+    <div class="cards">
+      <div class="card center-card">
+        <h3>📰 No Blog Posts Yet</h3>
+
+        <p>
+          There are currently no blog posts available.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="youtube-page" class="page">
+  <section>
+    <h2 class="section-title">YouTube Posts</h2>
+
+    <p class="section-sub">
+      Showcase your content and server highlights.
+    </p>
+
+    <div class="yt-grid">
+      <div class="yt-post">
+        <div class="thumbnail">▶</div>
+
+        <div class="yt-content center-text">
+          <h3>No YouTube Posts Yet</h3>
+
+          <p>
+            Future FameSMP videos will appear here.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+</div>
 
-    <section id="contact" class="gradient-section">
-        <h2>Contact & Domain</h2>
-        <p>Our custom domain: <strong>famesmpoffical.com</strong></p>
-        <p>Invite us to your server and visit our website!</p>
-    </section>
+<div id="seasons-page" class="page">
+  <section>
+    <h2 class="section-title">FameSMP Seasons</h2>
 
-    <footer>
-        <p>&copy; 2024 FameSMP. All rights reserved.</p>
-    </footer>
+    <p class="section-sub">
+      Follow every season of FameSMP.
+    </p>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="cards">
+      <div class="card center-card">
+        <h3>🔥 Current Season: Season 3</h3>
+
+        <p>
+          Season 3 is currently active with economy,
+          PvP, and community events.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="discord-page" class="page">
+  <section>
+    <h2 class="section-title">Join Our Discord</h2>
+
+    <p class="section-sub">
+      Meet the community and stay updated.
+    </p>
+
+    <div class="center-text">
+      <a href="https://discord.gg/EB55tE3syg"
+         target="_blank"
+         class="btn primary">
+        Join The Discord Server
+      </a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  © 2026 FameSMP Official
+</footer>
