@@ -1,0 +1,101 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #222;
+    color: #fff;
+}
+
+/* Header styling */
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Gradient sections (Red to Orange) */
+.gradient-section {
+    background: linear-gradient(135deg, red, orange);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#home h2, #contact h2, #blog h2, #youtube h2 {
+    margin-bottom: 15px;
+}
+
+#home .ip {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+/* Content sections */
+.content-section {
+    padding: 20px;
+    background-color: #111;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.post {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Footer styling */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
